@@ -29,7 +29,28 @@ do {
 /* obs: normalmente variaveis de controle de repetição são chamadas de i,j ou k */
 
 //EXEMPLO FOR (PARA)
-for(let i= 1; i <= 10; i++){
+/* for(let i= 1; i <= 10; i++){
     console.log(`i vale ${i}`);
+} */
+
+/* Loop com array */
+let clientes = [
+    "Ozzy",
+    "Dio",
+    "Gillan",
+    "Martin",
+    "Hughes",
+    "Fulano",
+    "Beltrano"
+
+];
+
+//"Cache/Memoria" da quantidade de elementos do array
+let quantidade = clientes.length
+
+
+for(let i = 0; i < clientes.length; i++ ) {
+    console.log(`Cliente ${clientes[i]}`);
+
 }
 
