@@ -11,11 +11,22 @@ let faltas = 3;
 let resultado;
 
 /* Operador lógico && (AND - E) */
-if(mediaFinal >= mediaMinima && faltas <= limiteDeFaltas){
-    resultado = "aprovado";
-} else {
-    resultado = "reprovado";
-}
+// if(mediaFinal >= mediaMinima && faltas <= limiteDeFaltas){
+//     resultado = "aprovado";
+// } else {
+//     resultado = "reprovado";
+// }
+
+
+if( mediaFinal >= mediaMinima && faltas <= limiteDeFaltas){
+    resultado = 'aprovado';
+    }
+    else if(faltas > limiteDeFaltas){
+        resultado = "reprovado por faltas";
+    }
+    else {
+        resultado = "reprovado";
+    }
 
 console.log(`O aluno ${aluno} está ${resultado}`);
 console.log(`Média do aluno: ${mediaFinal}`);
