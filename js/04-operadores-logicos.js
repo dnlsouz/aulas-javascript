@@ -53,3 +53,14 @@ if(diaDaSemana =="sabado" || diaDaSemana == "domingo") {console.log( "Final de s
     console.log("Vá trabalhar ...");
 }
 
+console.log("---------------------------------");
+
+/* Operadpr lógico ! (NOT - NÃO/NEGAÇÃO) */
+let blackfriday = true;
+
+if ( !blackfriday){
+    console.log ("Preços normais");
+
+} else {
+    console.log ("Preços com desconto...");
+}
